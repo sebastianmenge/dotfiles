@@ -1,0 +1,9 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+shell: /bin/bash
+project_name: merkin
+project_root: ~/Rails/bonusbox/merkin
+pre: powder restart
+tabs:
+  - shell: git pull
+  - shell: powder link

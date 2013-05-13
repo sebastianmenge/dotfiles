@@ -1,0 +1,22 @@
+[user]
+	name = sebastianmenge
+	email = s.menge@gmx.net
+[credential]
+	helper = osxkeychain
+[alias]
+  st = status -sb
+  cm = commit
+  co = checkout
+  diff = diff --word-diff
+  cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+  ca = commit --amend -C HEAD
+  rmb = !git branch -D ${1} && git push origin :${1}
+[core]
+  pager = less -r
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[push]
+	default = current
