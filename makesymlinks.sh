@@ -31,10 +31,10 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-for folder in $folders; do
-    mv ~/$folder ~/folders_old/
-    echo "Creating symlink to $folder in home directory."
-    ln -s $dir/$folder ~/folder
+for file in $folders; do
+    mv ~/$file ~/folders_old/
+    echo "Creating symlink to $file in home directory."
+    ln -s $dir/$file ~/$file
 done
 
 function install_zsh {
