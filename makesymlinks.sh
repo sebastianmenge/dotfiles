@@ -8,7 +8,8 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gitconfig zshrc oh-my-zsh pryrc tmux-powerlinerc tmux.conf"    # list of files/folders to symlink in homedir
+files="gitconfig zshrc oh-my-zsh pryrc tmux-powerlinerc tmux.conf tmuxinator"    # list of files/folders to symlink in homedir
+folders="tmux-powerline powerline"
 
 ##########
 
@@ -28,6 +29,12 @@ for file in $files; do
     mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
+done
+
+for folder in $folders; do
+    mv ~/$folder ~/folders_old/
+    echo "Creating symlink to $folder in home directory."
+    ln -s $dir/$folder ~/folder
 done
 
 function install_zsh {
