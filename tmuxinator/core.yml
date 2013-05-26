@@ -1,7 +1,7 @@
 # ~/.tmuxinator/core.yml
 # you can make as many tabs as you wish...
 project_name: core
-project_root: ~/Rails/bonusbox/core
+project_root: ~/Coding/Rails/bonusbox/core
 pre: powder restart
 tabs:
   - shell: git pull
