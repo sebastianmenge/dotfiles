@@ -1,0 +1,9 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+project_name: catcher
+project_root: ~/Coding/rails/catcher
+tabs:
+  - shell:
+  - console: rails c
+  - mongodb: mongod
+  - server: rails s

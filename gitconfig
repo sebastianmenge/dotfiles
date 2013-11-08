@@ -19,3 +19,5 @@
   status = auto
 [push]
 	default = current
+[heroku]
+	account = personal

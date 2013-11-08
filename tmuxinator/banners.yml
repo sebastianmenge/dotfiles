@@ -1,0 +1,8 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+project_name: banners
+project_root: ~/Coding/Rails/bonusbox/banners
+tabs:
+  - shell:
+  - console: rails c
+  - server: rails s

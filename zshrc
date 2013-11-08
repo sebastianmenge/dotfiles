@@ -10,6 +10,8 @@ ZSH_THEME="miloshadzic"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pullr="hub pull-request"
+alias gitr="git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -46,8 +48,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export EDITOR='vim'
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

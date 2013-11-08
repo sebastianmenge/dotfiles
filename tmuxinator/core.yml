@@ -2,9 +2,8 @@
 # you can make as many tabs as you wish...
 project_name: core
 project_root: ~/Coding/Rails/bonusbox/core
-pre: powder restart
 tabs:
-  - shell: git pull
+  - shell: git pull; sudo ipfw add forward 127.0.0.1,3000 tcp from any to any 80 in
   - console: while true; do zeus console; sleep 2; done
   - server: while true; do sleep 2; bundle exec foreman start; done
   - zeus: zeus start
