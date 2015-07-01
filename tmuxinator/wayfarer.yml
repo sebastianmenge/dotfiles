@@ -1,0 +1,15 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+project_name: wayfarer
+project_root: ~/Coding/projects/wayfarer
+windows:
+  - shell:
+      layout: even-horizontal
+      panes:
+        - gl
+        - gulp
+  - server:
+      layout: even-horizontal
+      panes:
+        - ..; cd wayfarer_api; gl
+        - ..; cd wayfarer_api; rails s

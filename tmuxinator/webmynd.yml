@@ -1,0 +1,16 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+project_name: webmynd
+project_root: ~/Coding/nielsen/webmynd
+windows:
+  - shell:
+      layout: even-horizontal
+      panes:
+        - gl
+        - gulp tdd
+        - gulp
+  - server:
+      layout: even-horizontal
+      panes:
+        - cd ..; cd webmynd_server
+        - cd ..; cd webmynd_server; DEBUG=webmynd_server:* ./bin/www

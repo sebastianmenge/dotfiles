@@ -1,6 +1,6 @@
 [user]
 	name = sebastianmenge
-	email = s.menge@gmx.net
+	email = an.sebastian.menge@gmail.com
 [credential]
 	helper = osxkeychain
 [alias]
@@ -12,6 +12,7 @@
   rmb = !git branch -D ${1} && git push origin :${1}
 [core]
   pager = less -r
+	excludesfile = /Users/sebastianmenge/.gitignore_global
 [color]
   branch = auto
   diff = auto
@@ -20,4 +21,13 @@
 [push]
 	default = current
 [heroku]
-	account = personal
+  remote = staging
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

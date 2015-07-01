@@ -1,0 +1,6 @@
+project_name: talespin
+project_root: ~/Coding/talespin
+windows:
+  - shell:
+  - console: rails c
+  - server: rails s

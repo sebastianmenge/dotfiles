@@ -1,0 +1,15 @@
+# ~/.tmuxinator/core.yml
+# you can make as many tabs as you wish...
+project_name: bitwall
+project_root: ~/Coding/projects/bitwall/desktop/bitwall
+windows:
+  - shell:
+      layout: even-horizontal
+      panes:
+        - gl
+        - rails c
+  - server:
+      layout: even-horizontal
+      panes:
+        - cd frontend; webpack --watch --colors
+        - rails s

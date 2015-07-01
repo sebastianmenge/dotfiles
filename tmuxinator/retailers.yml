@@ -1,0 +1,7 @@
+project_name: retailers
+project_root: ~/Coding/Rails/bonusbox/retailers
+windows:
+  - shell: git pull
+  - server: rails s -p 5000
+  - console: rails c
+

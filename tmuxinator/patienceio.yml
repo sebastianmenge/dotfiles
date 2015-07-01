@@ -1,0 +1,6 @@
+project_name: patienceio
+project_root: ~/Coding/patience/patience-io
+windows:
+  - shell: git pull
+  - watcher: JS_ENV=development ./build.sh
+  - server: ./run.sh

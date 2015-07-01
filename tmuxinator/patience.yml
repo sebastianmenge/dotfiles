@@ -1,0 +1,13 @@
+project_name: patience
+project_root: ~/Coding/patience/patience-mvp
+windows:
+  - shell:
+      layout: even-horizontal
+      panes:
+        - gl
+        - rails c
+  - server:
+      layout: even-horizontal
+      panes:
+        - cd web-apps; gulp
+        - ./run.sh
